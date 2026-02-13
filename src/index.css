@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #f34d13;
+    --primary-dark: #df4412;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbars for horizontal chip rows (still scrollable) */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* iOS momentum scroll for overflow containers */
+  .momentum-scroll {
+    -webkit-overflow-scrolling: touch;
+  }
+}
